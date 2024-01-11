@@ -1,4 +1,4 @@
-REPO="https://raw.githubusercontent.com/AngIMAN/wiz4rd/MONSTER/file"
+REPO="https://raw.githubusercontent.com/king-vpn/first/master/file"
 wget -q -O /etc/systemd/system/vmess.service "${REPO}/vmess.service" && chmod +x vmess.service >/dev/null 2>&1
 wget -q -O /etc/systemd/system/vless.service "${REPO}/vless.service" && chmod +x vless.service >/dev/null 2>&1
 wget -q -O /etc/systemd/system/trojan.service "${REPO}/trojan.service" && chmod +x trojan.service >/dev/null 2>&1
