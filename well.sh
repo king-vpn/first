@@ -130,7 +130,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/king-vpn/first/master"
+    REPO="https://raw.githubusercontent.com/king-vpn/first/master/"
 
 ####
 start=$(date +%s)
@@ -309,8 +309,8 @@ clear
 clear
 #GANTI PASSWORD DEFAULT
 restart_system() {
-    USRSC=$(wget -qO- https://raw.githubusercontent.com/AngIMAN/Regist/MONSTER/afk | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(wget -qO- https://raw.githubusercontent.com/AngIMAN/Regist/MONSTER/afk | grep $ipsaya | awk '{print $3}')
+    USRSC=$(wget -qO- https://raw.githubusercontent.com/king-vpn/first/master/REGIST | grep $ipsaya | awk '{print $2}')
+    EXPSC=$(wget -qO- https://raw.githubusercontent.com/king-vpn/first/master/REGIST | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
@@ -530,7 +530,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit Quota"
-wget raw.githubusercontent.com/AngIMAN/wiz4rd/MONSTER/file/limit.sh && chmod +x limit.sh && ./limit.sh
+wget raw.githubusercontent.com/king-vpn/first/master/limit.sh && chmod +x limit.sh && ./limit.sh
 
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}file/limit-ip"
