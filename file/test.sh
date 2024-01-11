@@ -16,8 +16,8 @@ CITY=$(wget -qO- ipinfo.io/city)
 TIME=$(date '+%d %b %Y')
 REPO="https://raw.githubusercontent.com/nishikazekazata/hah/main/"
 TIMES="10"
-CHATID="-6617783693"
-KEY="6751589620:AAHwjP6dzZhuqeyUOdYFc6742Q1YUVF1EjM"
+CHATID="1793095437"
+KEY="6884086118:AAEcK4z78K8fXnfeES2-r_LdXj68F9hhCx4"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 
 source '/etc/os-release'
@@ -50,10 +50,10 @@ check_vz() {
 
 logofigh() {
  echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To LunaticTunneling ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To PetaniTunneling ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "  Auther : ${green}Lunatic tunneling® ${NC}${YELLOW}(${NC} ${green} LUNATIC ${NC}${YELLOW})${NC}"
-echo -e " © Recode By My Lunatic n Tunneling${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "  Auther : ${green}Petani Tunneling® ${NC}${YELLOW}(${NC} ${green} LUNATIC ${NC}${YELLOW})${NC}"
+echo -e " © Recode By Petani Tunneling${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -511,8 +511,8 @@ EOF
 
 
 restart_system() {
-    USRSC=$(wget -qO- https://raw.githubusercontent.com/nishikazekazata/izin/main/ip | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(wget -qO- https://raw.githubusercontent.com/nishikazekazata/izin/main/ip | grep $ipsaya | awk '{print $3}')
+    USRSC=$(wget -qO- https://raw.githubusercontent.com/king-vpn/first/master/REGIST | grep $ipsaya | awk '{print $2}')
+    EXPSC=$(wget -qO- https://raw.githubusercontent.com/king-vpn/first/master/REGIST | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
@@ -526,7 +526,7 @@ restart_system() {
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ🐳","url":"https://t.me/Renzy_Store"},{"text":"ɪɴꜱᴛᴀʟʟ🐬","url":"https://t.me/channel_fightertunnell/25"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ🐳","url":"https://t.me/kingvpn77"},{"text":"ɪɴꜱᴛᴀʟʟ🐬","url":"https://t.me/kingvpn77"}]]}'
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
     cp /etc/openvpn/*.ovpn /var/www/html/
     sed -i "s/xxx/${domain}/g" /etc/nginx/conf.d/xray.conf
