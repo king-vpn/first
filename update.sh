@@ -35,8 +35,8 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget https://raw.githubusercontent.com/AngIMAN/wiz4rd/MONSTER/caddy/menu.zip
-    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/AngIMAN/wiz4rd/MONSTER/enc/encrypt" ; chmod +x /usr/bin/enc
+    wget https://raw.githubusercontent.com/king-vpn/first/master/caddy/menu.zip
+    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/king-vpn/first/master/enc/encrypt" ; chmod +x /usr/bin/enc
     7z e -paskykenza123 menu.zip
     unzip menu.zip
     chmod +x menu/*
