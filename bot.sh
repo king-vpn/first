@@ -15,7 +15,7 @@ NC='\e[0m'
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/AngIMAN/wiz4rd/MONSTER/bot/bot.zip
+wget https://raw.githubusercontent.com/king-vpn/first/master/bot/bot.zip
 clear
 unzip bot.zip
 clear
@@ -23,7 +23,7 @@ mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/AngIMAN/wiz4rd/MONSTER/bot/kyt.zip
+wget https://raw.githubusercontent.com/king-vpn/first/master/bot/kyt.zip
 clear
 unzip kyt.zip
 clear
