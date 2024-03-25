@@ -14,7 +14,7 @@ green='\e[0;32m'
 ipsaya=$(wget -qO- ipinfo.io/ip)
 CITY=$(wget -qO- ipinfo.io/city)
 TIME=$(date '+%d %b %Y')
-REPO="https://raw.githubusercontent.com/nishikazekazata/hah/main/"
+REPO="https://raw.githubusercontent.com/king-vpn/first/master/file/"
 TIMES="10"
 CHATID="1793095437"
 KEY="6884086118:AAEcK4z78K8fXnfeES2-r_LdXj68F9hhCx4"
@@ -118,7 +118,7 @@ clear
     echo -e "   .----------------------------------."
 echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
 echo -e "   '----------------------------------'"
-echo -e "     \e[1;32m1)\e[0m Domain Sendiri"
+echo -e "     \e[1;32m1)\e[0m Domain Sendiri YAH"
 #echo -e "     \e[1;32m2)\e[0m Menggunakan Random Domain dari Script"
 echo -e "   ------------------------------------"
 read -p "   Please select numbers 1  : " host
